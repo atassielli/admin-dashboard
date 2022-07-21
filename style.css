@@ -1,0 +1,91 @@
+.container {
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 4fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #ecfccb;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: #65a30d;
+    display: grid;
+    grid-template: 1fr 2fr 3fr / 1fr;
+}
+
+.logo {
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template: 1fr / 1fr 4fr;
+    margin-left: 5px;
+}
+
+.logo-picture {
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: center;
+}
+
+.logo-text {
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: center;
+    margin-left: 5px;
+}
+
+.navigation {
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 4fr;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.home-picture {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.home-text {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.profile-picture {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.profile-text {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.message-picture {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.message-text {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.support {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.main-content {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: #f7fee7;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+}
+
+.projects {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.announcements {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.trending {
+    grid-area: 2 / 2 / 3 / 3;
+}
